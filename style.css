@@ -16,6 +16,9 @@ ul {
 }
 
 header {
+  & #banniere {
+    text-align: center;
+  }
   & .flex {
     display: flex;
   }
