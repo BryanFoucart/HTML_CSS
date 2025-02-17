@@ -1,12 +1,42 @@
-h1 {
-  color: #ff0000;
-  font-size: 2rem;
-  font-family: Arial, sans-serif;
+img {
+  max-width: 100%;
 }
 
-li {
-  list-style-type: none;
-  & a {
-    text-decoration: none;
+* {
+  border: chocolate 1px solid;
+}
+
+ul {
+  & li {
+    list-style-type: none;
+    & a {
+      text-decoration: none;
+    }
+  }
+}
+
+header {
+  & .flex {
+    display: flex;
+  }
+  & #logo > img {
+    width: 100px;
+  }
+  & nav {
+    flex-grow: 1;
+    & ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3%;
+      /* justify-content: space-around; */
+      height: 100%;
+      & li {
+        & a {
+          font-size: 16px;
+          /* Add styles here if needed */
+        }
+      }
+    }
   }
 }
