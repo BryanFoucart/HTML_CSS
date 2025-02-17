@@ -1,0 +1,12 @@
+h1 {
+  color: #ff0000;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  & a {
+    text-decoration: none;
+  }
+}
