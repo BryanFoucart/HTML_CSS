@@ -2,8 +2,12 @@ img {
   max-width: 100%;
 }
 
-* {
+/* * {
   border: chocolate 1px solid;
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -16,8 +20,14 @@ ul {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  position: fixed;
+  width: 100%;
   & #banniere {
     text-align: center;
+    display: none;
   }
   & .flex {
     display: flex;
@@ -41,5 +51,55 @@ header {
         }
       }
     }
+  }
+}
+
+main {
+  text-align: center;
+  & section#hero {
+    /* background-image: url("./image3.webp");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-position: center bottom; */
+    /* object-fit: cover; */
+    background: url("./image3.webp") no-repeat top center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & #hero_content {
+      /* display: flex; */
+      /* flex-direction: column; */
+      width: 50%;
+      /* margin: auto; */
+      & h1 {
+        text-shadow: 5px 5px 15px black;
+      }
+      & p {
+        text-align: justify;
+      }
+      & button {
+        font-size: 17px;
+        border: 3px solid red;
+        background: white;
+        color: red;
+      }
+      button:hover {
+        background: red;
+        color: white;
+      }
+    }
+  }
+  & section#A_Propos {
+    height: 800px;
+  }
+
+  & section#Experiences {
+    height: 800px;
+  }
+  & section#Contact {
+    height: 800px;
   }
 }
