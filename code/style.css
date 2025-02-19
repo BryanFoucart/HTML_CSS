@@ -1,3 +1,13 @@
+:root {
+  --navbar: #000000;
+  --background: #14213d;
+  --hover: #fca311;
+  --link: #e5e5e5;
+  --texte: #ffffff;
+  --police: "Roboto", sans-serif;
+  --police2: "Montserrat", sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -26,6 +36,11 @@ ul {
       text-decoration: none;
     }
   }
+}
+
+section:nth-child(1n + 1) {
+  background: var(--background);
+  color: var(--texte);
 }
 
 header {
